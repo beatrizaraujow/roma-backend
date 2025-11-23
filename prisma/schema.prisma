@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(uuid())
+  nome          String
+  email         String   @unique
+  senha         String
+  telefone      String?
+  empresa       String?
+  cargo         String?
+  fotoPerfil    String?
+  
+  // Configurações
+  notificacoes  Boolean  @default(true)
+  autenticacao2FA Boolean @default(false)
+  modoEscuro    Boolean  @default(false)
+  
+  // Tokens de recuperação
+  resetToken    String?
+  resetTokenExpiry DateTime?
+  
+  // Refresh tokens
+  refreshTokens RefreshToken[]
+  
+  // Logs de atividade
+  activities    Activity[]
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  @@map("users")
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  
+  @@map("refresh_tokens")
+}
+
+model Activity {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  action      String
+  description String?
+  ipAddress   String?
+  userAgent   String?
+  createdAt   DateTime @default(now())
+  
+  @@map("activities")
+}
