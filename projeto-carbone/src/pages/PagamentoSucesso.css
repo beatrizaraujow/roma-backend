@@ -1,0 +1,230 @@
+.pagamento-sucesso-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.pagamento-sucesso-card {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-animation {
+  margin-bottom: 2rem;
+}
+
+.checkmark-circle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.checkmark {
+  width: 30px;
+  height: 60px;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  transform: rotate(45deg);
+  animation: checkmark 0.5s ease-in 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 60px;
+    opacity: 1;
+  }
+}
+
+.pagamento-sucesso-card h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.6s ease-in 0.4s backwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-message {
+  color: #6b7280;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  animation: fadeIn 0.6s ease-in 0.5s backwards;
+}
+
+.order-details {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.6s ease-in 0.6s backwards;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.detail-item strong {
+  display: block;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.detail-item p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.transaction-info {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.6s ease-in 0.7s backwards;
+}
+
+.transaction-info p {
+  margin: 0;
+  color: #1e40af;
+  font-size: 0.9rem;
+}
+
+.transaction-info code {
+  background: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.6s ease-in 0.8s backwards;
+}
+
+.redirect-info {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin: 0;
+  animation: fadeIn 0.6s ease-in 0.9s backwards;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .pagamento-sucesso-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .pagamento-sucesso-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .success-message {
+    font-size: 1rem;
+  }
+
+  .checkmark-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .checkmark {
+    width: 24px;
+    height: 48px;
+    border-width: 0 6px 6px 0;
+  }
+
+  @keyframes checkmark {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: 48px;
+      opacity: 1;
+    }
+  }
+
+  .order-details {
+    padding: 1.5rem;
+  }
+
+  .detail-icon {
+    font-size: 1.5rem;
+  }
+}

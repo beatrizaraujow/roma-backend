@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  height: 100vh;
+  background-color: white;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* Input styles */
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 10px;
+  color: #374151;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.input-field::placeholder {
+  color: #b8b8b8;
+}
+
+.input-field:focus {
+  outline: none;
+  background-color: #ececec;
+}
+
+/* Button styles */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #3a3a3a;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background-color: #2a2a2a;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Label styles */
+.label-text {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}

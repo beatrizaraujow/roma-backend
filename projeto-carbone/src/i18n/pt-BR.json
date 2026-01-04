@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "ROMA"
+  },
+  "auth": {
+    "login": {
+      "title": "Bem-vindo(a)",
+      "subtitle": "Use suas credenciais para acessar",
+      "email": "Email",
+      "password": "Senha",
+      "remember": "Lembrar-me",
+      "forgot": "Esqueceu sua senha?",
+      "recover": "Recuperar sua senha",
+      "noAccount": "Não tem uma conta?",
+      "createAccount": "Criar nova conta",
+      "submit": "Entrar",
+      "submitting": "Entrando"
+    },
+    "register": {
+      "title": "Criar Conta",
+      "subtitle": "Preencha os dados para começar",
+      "fullName": "Nome Completo",
+      "email": "Email",
+      "password": "Senha",
+      "confirmPassword": "Confirmar Senha",
+      "hasAccount": "Já tem uma conta?",
+      "login": "Fazer login",
+      "submit": "Criar conta",
+      "submitting": "Criando conta"
+    }
+  },
+  "dashboard": {
+    "welcome": "Olá, {{name}}!",
+    "subtitle": "Bem-vindo(a) ao seu painel",
+    "logout": "Sair",
+    "cards": {
+      "profile": {
+        "title": "Meu Perfil",
+        "description": "Gerencie suas informações pessoais",
+        "action": "Acessar"
+      },
+      "settings": {
+        "title": "Configurações",
+        "description": "Personalize suas preferências do sistema",
+        "action": "Acessar"
+      },
+      "history": {
+        "title": "Histórico",
+        "description": "Veja todas as atividades da sua conta",
+        "action": "Acessar"
+      }
+    },
+    "accountInfo": {
+      "title": "Informações da Conta",
+      "email": "Email",
+      "id": "ID"
+    }
+  },
+  "settings": {
+    "title": "Configurações",
+    "back": "Voltar",
+    "account": {
+      "title": "Informações da Conta",
+      "email": "Email",
+      "name": "Nome",
+      "id": "ID",
+      "status": "Status",
+      "active": "Ativo"
+    },
+    "twoFactor": {
+      "title": "Autenticação de Dois Fatores",
+      "subtitle": "Adicione uma camada extra de segurança à sua conta",
+      "active": "Ativado"
+    },
+    "security": {
+      "title": "Segurança",
+      "currentPassword": "Senha Atual",
+      "newPassword": "Nova Senha",
+      "confirmPassword": "Confirmar Nova Senha",
+      "submit": "Alterar Senha",
+      "submitting": "Alterando..."
+    },
+    "preferences": {
+      "title": "Preferências",
+      "notifications": {
+        "title": "Notificações por Email",
+        "description": "Receba atualizações e novidades por email"
+      },
+      "darkMode": {
+        "title": "Modo Escuro",
+        "description": "Ative o tema escuro para melhor visualização",
+        "active": "Ativado"
+      },
+      "language": {
+        "title": "Idioma",
+        "description": "Escolha seu idioma preferido"
+      }
+    }
+  },
+  "common": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "loading": "Carregando...",
+    "success": "Sucesso!",
+    "error": "Erro",
+    "confirm": "Confirmar"
+  }
+}

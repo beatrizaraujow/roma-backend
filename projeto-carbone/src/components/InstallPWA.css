@@ -1,0 +1,119 @@
+install-pwa-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.install-pwa-content {
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 8px 24px var(--shadow-hover);
+  max-width: 500px;
+}
+
+.install-pwa-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.install-pwa-text {
+  flex: 1;
+}
+
+.install-pwa-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.install-pwa-text p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.install-pwa-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-install {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-install:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.btn-dismiss {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dismiss:hover {
+  color: var(--text-primary);
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .install-pwa-banner {
+    left: 16px;
+    right: 16px;
+    transform: none;
+    bottom: 16px;
+  }
+
+  .install-pwa-content {
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .install-pwa-text h3 {
+    font-size: 0.875rem;
+  }
+
+  .install-pwa-text p {
+    font-size: 0.75rem;
+  }
+}

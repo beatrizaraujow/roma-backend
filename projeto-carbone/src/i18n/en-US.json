@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "ROMA"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome",
+      "subtitle": "Use your credentials to access",
+      "email": "Email",
+      "password": "Password",
+      "remember": "Remember me",
+      "forgot": "Forgot your password?",
+      "recover": "Recover your password",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create new account",
+      "submit": "Sign in",
+      "submitting": "Signing in"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Fill in the details to get started",
+      "fullName": "Full Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "hasAccount": "Already have an account?",
+      "login": "Sign in",
+      "submit": "Create account",
+      "submitting": "Creating account"
+    }
+  },
+  "dashboard": {
+    "welcome": "Hello, {{name}}!",
+    "subtitle": "Welcome to your dashboard",
+    "logout": "Logout",
+    "cards": {
+      "profile": {
+        "title": "My Profile",
+        "description": "Manage your personal information",
+        "action": "Access"
+      },
+      "settings": {
+        "title": "Settings",
+        "description": "Customize your system preferences",
+        "action": "Access"
+      },
+      "history": {
+        "title": "History",
+        "description": "View all your account activities",
+        "action": "Access"
+      }
+    },
+    "accountInfo": {
+      "title": "Account Information",
+      "email": "Email",
+      "id": "ID"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "back": "Back",
+    "account": {
+      "title": "Account Information",
+      "email": "Email",
+      "name": "Name",
+      "id": "ID",
+      "status": "Status",
+      "active": "Active"
+    },
+    "twoFactor": {
+      "title": "Two-Factor Authentication",
+      "subtitle": "Add an extra layer of security to your account",
+      "active": "Enabled"
+    },
+    "security": {
+      "title": "Security",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "submit": "Change Password",
+      "submitting": "Changing..."
+    },
+    "preferences": {
+      "title": "Preferences",
+      "notifications": {
+        "title": "Email Notifications",
+        "description": "Receive updates and news via email"
+      },
+      "darkMode": {
+        "title": "Dark Mode",
+        "description": "Enable dark theme for better viewing",
+        "active": "Enabled"
+      },
+      "language": {
+        "title": "Language",
+        "description": "Choose your preferred language"
+      }
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "success": "Success!",
+    "error": "Error",
+    "confirm": "Confirm"
+  }
+}

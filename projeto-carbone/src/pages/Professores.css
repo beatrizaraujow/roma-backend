@@ -1,0 +1,468 @@
+.professores-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f9fafb;
+  overflow: hidden;
+}
+
+.professores-main {
+  margin-left: 280px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.professores-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.professores-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.professores-nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+}
+
+/* Content */
+.professores-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Lista de Professores */
+.professores-lista {
+  width: 320px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.professores-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 24px 0;
+}
+
+.professores-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.professor-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.professor-card:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+.professor-card.active {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.professor-card-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.professor-card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.professor-card-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.professor-card-info {
+  flex: 1;
+}
+
+.professor-card-info h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.professor-card-info p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Detalhes do Professor */
+.professor-detalhes {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.professor-detalhes-header {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.professor-detalhes-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 4px solid #3b82f6;
+}
+
+.professor-detalhes-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.professor-detalhes-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.professor-detalhes-info {
+  flex: 1;
+}
+
+.professor-detalhes-info h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.professor-especialidade {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3b82f6;
+  margin: 0 0 16px 0;
+}
+
+.professor-bio {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Cursos */
+.professor-cursos {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cursos-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 24px 0;
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.curso-card {
+  background-color: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.curso-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #3b82f6;
+}
+
+.curso-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.curso-card-header h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  flex: 1;
+}
+
+.curso-nivel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.curso-nivel.básico {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.curso-nivel.intermediário {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.curso-nivel.avançado {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.curso-descricao {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6b7280;
+  margin: 0 0 16px 0;
+}
+
+.curso-preco-info {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.curso-preco {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.curso-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.curso-duracao {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.curso-duracao svg {
+  color: #9ca3af;
+}
+
+.curso-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 16px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.curso-btn:hover:not(:disabled) {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.curso-btn.no-carrinho {
+  background-color: #10b981;
+  cursor: default;
+}
+
+.curso-btn.no-carrinho:hover {
+  background-color: #059669;
+  transform: none;
+}
+
+.curso-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.curso-btn svg {
+  flex-shrink: 0;
+}
+
+/* Empty State */
+.professores-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.professores-empty p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Scrollbar */
+.professores-lista::-webkit-scrollbar,
+.professor-detalhes::-webkit-scrollbar {
+  width: 6px;
+}
+
+.professores-lista::-webkit-scrollbar-track,
+.professor-detalhes::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.professores-lista::-webkit-scrollbar-thumb,
+.professor-detalhes::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.professores-lista::-webkit-scrollbar-thumb:hover,
+.professor-detalhes::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cursos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .professores-main {
+    margin-left: 0;
+  }
+
+  .professores-content {
+    flex-direction: column;
+  }
+
+  .professores-lista {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .professor-detalhes {
+    padding: 20px;
+  }
+
+  .professor-detalhes-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .professores-header {
+    padding: 16px 20px;
+  }
+
+  .professores-nav {
+    gap: 24px;
+  }
+}

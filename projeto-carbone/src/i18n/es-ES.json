@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "ROMA"
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido(a)",
+      "subtitle": "Use sus credenciales para acceder",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "remember": "Recuérdame",
+      "forgot": "¿Olvidó su contraseña?",
+      "recover": "Recuperar su contraseña",
+      "noAccount": "¿No tiene una cuenta?",
+      "createAccount": "Crear nueva cuenta",
+      "submit": "Entrar",
+      "submitting": "Entrando"
+    },
+    "register": {
+      "title": "Crear Cuenta",
+      "subtitle": "Complete los datos para comenzar",
+      "fullName": "Nombre Completo",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar Contraseña",
+      "hasAccount": "¿Ya tiene una cuenta?",
+      "login": "Iniciar sesión",
+      "submit": "Crear cuenta",
+      "submitting": "Creando cuenta"
+    }
+  },
+  "dashboard": {
+    "welcome": "¡Hola, {{name}}!",
+    "subtitle": "Bienvenido(a) a su panel",
+    "logout": "Salir",
+    "cards": {
+      "profile": {
+        "title": "Mi Perfil",
+        "description": "Gestione su información personal",
+        "action": "Acceder"
+      },
+      "settings": {
+        "title": "Configuración",
+        "description": "Personalice sus preferencias del sistema",
+        "action": "Acceder"
+      },
+      "history": {
+        "title": "Historial",
+        "description": "Vea todas las actividades de su cuenta",
+        "action": "Acceder"
+      }
+    },
+    "accountInfo": {
+      "title": "Información de la Cuenta",
+      "email": "Correo electrónico",
+      "id": "ID"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "back": "Volver",
+    "account": {
+      "title": "Información de la Cuenta",
+      "email": "Correo electrónico",
+      "name": "Nombre",
+      "id": "ID",
+      "status": "Estado",
+      "active": "Activo"
+    },
+    "twoFactor": {
+      "title": "Autenticación de Dos Factores",
+      "subtitle": "Agregue una capa adicional de seguridad a su cuenta",
+      "active": "Activado"
+    },
+    "security": {
+      "title": "Seguridad",
+      "currentPassword": "Contraseña Actual",
+      "newPassword": "Nueva Contraseña",
+      "confirmPassword": "Confirmar Nueva Contraseña",
+      "submit": "Cambiar Contraseña",
+      "submitting": "Cambiando..."
+    },
+    "preferences": {
+      "title": "Preferencias",
+      "notifications": {
+        "title": "Notificaciones por Correo",
+        "description": "Reciba actualizaciones y novedades por correo"
+      },
+      "darkMode": {
+        "title": "Modo Oscuro",
+        "description": "Active el tema oscuro para mejor visualización",
+        "active": "Activado"
+      },
+      "language": {
+        "title": "Idioma",
+        "description": "Elija su idioma preferido"
+      }
+    }
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "loading": "Cargando...",
+    "success": "¡Éxito!",
+    "error": "Error",
+    "confirm": "Confirmar"
+  }
+}
