@@ -90,20 +90,6 @@ export default function Login() {
 
           {/* Formulário */}
           <form onSubmit={handleSubmit}>
-            {/* Alerta de Backend */}
-            <div style={{ 
-              padding: '10px', 
-              marginBottom: '16px', 
-              backgroundColor: '#dcfce7', 
-              color: '#166534', 
-              borderRadius: '8px',
-              fontSize: '12px',
-              textAlign: 'center',
-              border: '1px solid #86efac'
-            }}>
-              ✅ Backend configurado! Execute em terminal separado: <code style={{backgroundColor: '#fff', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold'}}>npm run server</code>
-            </div>
-
             {error && (
               <div style={{ 
                 padding: '10px', 
